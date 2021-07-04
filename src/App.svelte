@@ -1,10 +1,13 @@
 <script>
-	export let name;
+	let name = 'july';
+	function handleClick(){
+		name = 'otro nombre'
+	}
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Bienvenido a  Italia 🦮</h1>
+	<button on:click={handleClick}>En construccion</button>
 </main>
 
 <style>
@@ -16,7 +19,7 @@
 	}
 
 	h1 {
-		color: #ff3e00;
+		color: #ff0080;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
