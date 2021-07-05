@@ -1,19 +1,18 @@
 <script>
-    // import { link } from "svelte-routing";
+    import { link } from "svelte-routing";
   
     // core components
-    // import AuthNavbar from "components/Navbars/AuthNavbar.svelte";
-    // import Footer from "components/Footers/Footer.svelte";
+    import AuthNavbar from "components/Navbars/AuthNavbar.svelte";
+    import Footer from "components/Footers/Footer.svelte";
   
-    const team1 ="/assets/img/poncho1.jpeg" //"/assets/img/team-1-800x800.jpg";
-    const team2 = "/assets/img/poncho2.jpeg"//"/assets/img/team-2-800x800.jpg";
-    const team3 = "/assets/img/poncho1.jpeg"
-    const team4 = "/assets/img/poncho2.jpeg"
-    const local = "/assets/img/local.jpg"
+    const team1 = "/assets/img/team-1-800x800.jpg";
+    const team2 = "/assets/img/team-2-800x800.jpg";
+    const team3 = "/assets/img/team-3-800x800.jpg";
+    const team4 = "/assets/img/team-4-470x470.png";
   </script>
   
   <div>
-    <!-- <AuthNavbar /> -->
+    <AuthNavbar />
     <main>
       <div
         class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75"
@@ -21,7 +20,7 @@
         <div
           class="absolute top-0 w-full h-full bg-center bg-cover"
           style="
-            background-image: url({local});
+            background-image: url(https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80);
           "
         >
           <span
@@ -34,11 +33,12 @@
             <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div class="pr-12">
                 <h1 class="text-white font-semibold text-5xl">
-                  Todo lo que necesitas para tu mascota en un solo lugar.
+                  Your story starts with us.
                 </h1>
                 <p class="mt-4 text-lg text-blueGray-200">
-                  Por que sabemos lo importantes que son para ti tus mascotas, tenemos todo lo que necesitas para demostrarles
-                  que son parte de tu familia.
+                  This is a simple example of a Landing Page you can build using
+                  Notus Svelte. It features multiple CSS components
+                  based on the Tailwind CSS design system.
                 </p>
               </div>
             </div>
@@ -76,12 +76,12 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                   >
-                    <i class="fas fa-paw"></i>
+                    <i class="fas fa-award"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Servicio de estilista</h6>
+                  <h6 class="text-xl font-semibold">Awarded Agency</h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    Nuestra estilista siempre va a encontrar exactamente lo mas apropiado
-                    para tu mascota.
+                    Divide details about your product or agency work into parts. A
+                    paragraph describing a feature will be enough.
                   </p>
                 </div>
               </div>
@@ -95,11 +95,12 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400"
                   >
-                  <i class="fas fa-dog"></i>
+                    <i class="fas fa-retweet"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Nuevas colecciones</h6>
+                  <h6 class="text-xl font-semibold">Free Revisions</h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    Aqui siempre vas a encontrar acceorios a la moda pero tambien muy útiles.
+                    Keep you user engaged by providing meaningful information.
+                    Remember that by this time, the user is curious.
                   </p>
                 </div>
               </div>
@@ -113,11 +114,12 @@
                   <div
                     class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-emerald-400"
                   >
-                    <i class="fas fa-bone"></i>
+                    <i class="fas fa-fingerprint"></i>
                   </div>
-                  <h6 class="text-xl font-semibold">Rapida entrega</h6>
+                  <h6 class="text-xl font-semibold">Verified Company</h6>
                   <p class="mt-2 mb-4 text-blueGray-500">
-                    Rápida entrega, despues de ordenar
+                    Write a few lines about each one. A paragraph describing a
+                    feature will be enough. Keep you user engaged!
                   </p>
                 </div>
               </div>
@@ -126,20 +128,30 @@
   
           <div class="flex flex-wrap items-center mt-32">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+              <div
+                class="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
+              >
+                <i class="fas fa-user-friends text-xl"></i>
+              </div>
               <h3 class="text-3xl mb-2 font-semibold leading-normal">
-                Sobre Italia's Petshop
+                Working with us is a pleasure
               </h3>
               <p
                 class="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600"
               >
-                Aqui podriamos poner lo de la mision, vision e historia de tu negocio 
-                
+                Don't let your uses guess by attaching tooltips and popoves to any
+                element. Just make sure you enable them first via JavaScript.
               </p>
               <p
                 class="text-lg font-light leading-relaxed mt-0 mb-4 text-blueGray-600"
               >
-                esto es un negocio de mujeres empoderadas y emprendedoras...
+                The kit comes with three pre-built pages to help you get started
+                faster. You can change the text and images and you're good to go.
+                Just make sure you enable them first via JavaScript.
               </p>
+              <a use:link href="/" class="font-bold text-blueGray-700 mt-8">
+                Check Notus Svelte!
+              </a>
             </div>
   
             <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -148,7 +160,7 @@
               >
                 <img
                   alt="..."
-                  src="assets/img/italiasLogo.png"
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
                   class="w-full align-middle rounded-t-lg"
                 />
                 <blockquote class="relative p-8 mb-4">
@@ -164,10 +176,12 @@
                     ></polygon>
                   </svg>
                   <h4 class="text-xl font-bold text-white">
-                    Nos puedes encontrar en:
+                    Top Notch Services
                   </h4>
                   <p class="text-md font-light mt-2 text-white">
-                    datos personales
+                    The Arctic Ocean freezes every winter and much of the sea-ice
+                    then thaws every summer, and that process will continue
+                    whatever happens.
                   </p>
                 </blockquote>
               </div>
@@ -199,6 +213,13 @@
   
         <div class="container mx-auto px-4">
           <div class="items-center flex flex-wrap">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <img
+                alt="..."
+                class="max-w-full rounded-lg shadow-lg"
+                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              />
+            </div>
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
               <div class="md:pr-12">
                 <div
@@ -206,10 +227,60 @@
                 >
                   <i class="fas fa-rocket text-xl"></i>
                 </div>
-                <h3 class="text-3xl font-semibold">PRODUCTOS</h3>
+                <h3 class="text-3xl font-semibold">A growing company</h3>
                 <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
-                  Tienda de artículos para mascotas, baños y peluquería.
-                </p>  
+                  The extension comes with three pre-built pages to help you get
+                  started faster. You can change the text and images and you're
+                  good to go.
+                </p>
+                <ul class="list-none mt-6">
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-3"
+                        >
+                          <i class="fas fa-fingerprint"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-blueGray-500">
+                          Carefully crafted components
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-3"
+                        >
+                          <i class="fab fa-html5"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-blueGray-500">
+                          Amazing page examples
+                        </h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span
+                          class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-red-600 bg-red-200 mr-3"
+                        >
+                          <i class="far fa-paper-plane"></i>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 class="text-blueGray-500">Dynamic components</h4>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -218,6 +289,16 @@
   
       <section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+              <p class="text-lg leading-relaxed m-4 text-blueGray-500">
+                According to the National Oceanic and Atmospheric Administration,
+                Ted, Scambos, NSIDClead scentist, puts the potentially record
+                maximum.
+              </p>
+            </div>
+          </div>
           <div class="flex flex-wrap">
             <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div class="px-6">
@@ -227,9 +308,9 @@
                   class="shadow-lg rounded-full mx-auto max-w-120-px"
                 />
                 <div class="pt-6 text-center">
-                  <h5 class="text-xl font-bold">Ponchitos</h5>
+                  <h5 class="text-xl font-bold">Ryan Tompson</h5>
                   <p class="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                    Todas las tallas
+                    Web Developer
                   </p>
                   <div class="mt-6">
                     <button
@@ -517,6 +598,6 @@
         </div>
       </section>
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </div>
   
