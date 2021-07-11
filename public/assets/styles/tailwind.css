@@ -1237,6 +1237,12 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
 }
+.bg-logo {
+  background-image: url("../img/italiasLogo.png");
+  background-blend-mode: soft-light;
+  --tw-bg-opacity:1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
 
 .bg-purple-200 {
   --tw-bg-opacity: 1;
@@ -1246,6 +1252,21 @@ select {
 .bg-purple-500 {
   --tw-bg-opacity: 1;
   background-color: rgba(168, 85, 247, var(--tw-bg-opacity));
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+}
+
+.bg-purple-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+}
+
+.bg-purple-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
 }
 
 .bg-indigo-500 {
@@ -1356,6 +1377,11 @@ select {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgba(228, 228, 231, var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
 }
 
 .bg-blueGray-50 {
@@ -3204,6 +3230,10 @@ select {
 .text-blueGray-100 {
   --tw-text-opacity: 1;
   color: rgba(241, 245, 249, var(--tw-text-opacity));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
 .text-blueGray-200 {
