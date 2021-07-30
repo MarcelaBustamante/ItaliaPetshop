@@ -1,23 +1,25 @@
 <script>
   export let id;
-  // global store
+  export let location;
+  import { addToCart } from "../stores/cart";
 
   import products from "../stores/defaultProducts";
   import Loading from "../components/Loading.svelte";
   import { link } from "svelte-routing";
-
-  $: product = $products.find((item) => item.id === parseInt(id));
+  import globalStore from "../../../ItaliaPetshop/src/stores/globalStore";
+  $: product = $products.find(item => item.id === parseInt(id));
 </script>
 
 <svelte:head>
-  <title>{!product ? "Italia's" : product.title}</title>
+  <title>{!product ? 'single product' : product.title}</title>
 </svelte:head>
+
 {#if !product}
   <Loading />
 {:else}
   <section class="single-product">
     <!-- back to products -->
-    <a href="/products" use:link class="btn btn-primary">volver a productos</a>
+    <a href="/products" use:link class="btn btn-primary">Volver</a>
     <!-- single product container -->
     <div class="single-product-container">
       <article class="single-product-image">
@@ -25,13 +27,16 @@
       </article>
       <article>
         <h1>{product.title}</h1>
-        <h2>{product.price}</h2>
+        <h2>${product.price}</h2>
+        <p>{product.description}</p>
         <button
           class="btn btn-primary btn-block"
           on:click={() => {
-            console.log("hello");
-          }}>agregar al carrito</button
-        >
+            addToCart(parseInt(id), product);
+            globalStore.toggleItem('cart', true);
+          }}>
+          Agregar a tu bolsa
+        </button>
       </article>
     </div>
   </section>

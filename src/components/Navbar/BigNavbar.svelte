@@ -2,6 +2,7 @@
   import CartButton from "../Cart/CartButton.svelte";
   import { link } from "svelte-routing";
   import links from "../../constants/links";
+  import LoginLink from '../LoginLink.svelte'
 </script>
 
 <nav class="navbar">
@@ -17,10 +18,11 @@
         <!-- nav logo-->
       </ul>
       <a href="/" use:link class="nav-logo big-logo">
-        <img src="/assets/images/logo.svg" class="logo" alt="" /></a
+        <img src="/assets/images/logo.png" class="logo" alt="" /></a
       >
       <!-- cart toggle -->
       <div class="nav-aside">
+        <LoginLink/>
         <CartButton />
       </div>
     </div>
