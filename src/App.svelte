@@ -12,7 +12,7 @@
   import Sidebar from "./components/Navbar/Sidebar.svelte";
   //global store
   import globalStore from "./stores/globalStore";
-import Checkout from "./pages/Checkout.svelte";
+  import Checkout from "./pages/Checkout.svelte";
 </script>
 
 <Router>
