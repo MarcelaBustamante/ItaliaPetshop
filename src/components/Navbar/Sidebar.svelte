@@ -1,7 +1,7 @@
 <script>
   import links from "../../constants/links";
   import { link } from "svelte-routing";
-  import globalStore from "../../../../ItaliaPetshop/src/stores/globalStore";
+  import globalStore from "../../stores/globalStore";
   import { fly, fade } from "svelte/transition";
 import LoginLink from "../LoginLink.svelte";
 </script>

@@ -1,5 +1,5 @@
 <script>
-  import globalStore from "../../../../ItaliaPetshop/src/stores/globalStore";
+  import globalStore from "../../stores/globalStore";
   import { fly, fade, blur } from "svelte/transition";
   import { link } from "svelte-routing";
   import ItemList from "./ItemList.svelte";
