@@ -1,6 +1,7 @@
 <script>
   //pages
   import Login from "./pages/Login.svelte";
+  import Checkout from "./pages/Checkout.svelte";
   import ProductTemplate from "./pages/ProductTemplate.svelte";
   import Products from "./pages/Products.svelte";
   import Home from "./pages/Home.svelte";
@@ -12,7 +13,6 @@
   import Sidebar from "./components/Navbar/Sidebar.svelte";
   //global store
   import globalStore from "./stores/globalStore";
-import Checkout from "./pages/Checkout.svelte";
 </script>
 
 <Router>
