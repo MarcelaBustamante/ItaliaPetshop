@@ -1,1 +1,1 @@
-<h1>Welcome to checkout page</h1>
+<p>welcome to the party</p>
