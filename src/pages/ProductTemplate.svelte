@@ -5,7 +5,7 @@
   import products from "../stores/defaultProducts";
   import Loading from "../components/Loading.svelte";
   import { link } from "svelte-routing";
-  import globalStore from "../../../ItaliaPetshop/src/stores/globalStore";
+  import globalStore from "../stores/globalStores";
   $: product = $products.find(item => item.id === parseInt(id));
 </script>
 
